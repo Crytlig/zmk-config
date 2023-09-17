@@ -1,7 +1,25 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK
+
+on: [pull_request, workflow_dispatch]
 
 jobs:
+  adjust-branch-name:
+    runs-on: ubuntu-22.04
+    outputs:
+      BRANCH: ${{steps.branch.outputs.BRANCH}}
+    steps:
+      - run: |
+          branch='${{github.ref_name}}'
+          if [ ${{ github.event == 'pull_request' }} ]; then
+            branch='${{github.head_ref}}'
+          fi;
+
+          echo "BRANCH=$branch" >> $GITHUB_OUTPUT
+        id: branch
+
   build:
+    needs: adjust-branch-name
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
-      archive_name: firmware-${{github.run_id}}
+      archive_name: firmware-${{needs.adjust-branch-name.outputs.BRANCH}}-${{github.run_id}}
+    
