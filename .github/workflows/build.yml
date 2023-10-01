@@ -19,7 +19,7 @@ jobs:
 
   build:
     needs: adjust-branch-name
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
     with:
       archive_name: firmware-${{needs.adjust-branch-name.outputs.BRANCH}}-${{github.run_id}}
     
