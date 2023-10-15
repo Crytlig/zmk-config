@@ -85,13 +85,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │  ]       │  )       │  }       │          │  ^       │
-            &kp trans &kp trans   &kp trans  &kp trans  &kp trans     &kp RBKT   &kp RPAR    &kp RBRC   &kp trans  &kp caret
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &trans      &trans    &trans     &trans     &trans        &kp RBKT   &kp RPAR    &kp RBRC   &trans     &kp caret
+        //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp trans &kp trans   &kp trans  &kp trans  &kp trans       &kp trans &kp trans   &kp trans  &kp trans  &kp trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp trans &kp trans   &kp trans  &kp trans  &kp trans      &kp trans &kp trans   &kp trans  &kp trans  &kp trans
+            &trans      &trans    &trans     &trans     &trans          &trans    &trans      &trans     &trans     &trans
+        //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          |          │          |
+            &trans      &trans    &trans     &trans     &trans         &trans     &trans      &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
