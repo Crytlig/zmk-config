@@ -84,14 +84,14 @@
         symbol_layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  ]       │  )       │  }       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp RBKT   &kp RPAR    &kp RBRC      &kp O      &kp P
+        //│          │          │          │          │          │   │  ]       │  )       │  }       │          │  ^       │
+            &kp trans &kp trans   &kp trans  &kp trans  &kp trans     &kp RBKT   &kp RPAR    &kp RBRC   &kp trans  &kp caret
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &kp trans &kp trans   &kp trans  &kp trans  &kp trans       &kp trans &kp trans   &kp trans  &kp trans  &kp trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &kp trans &kp trans   &kp trans  &kp trans  &kp trans      &kp trans &kp trans   &kp trans  &kp trans  &kp trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
