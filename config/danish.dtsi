@@ -9,8 +9,8 @@
 #define _SLASH AMPS // /
 #define _BSLH RA(NUBS) 
 #define _PERCENT LS(N5) // %
-#define _DOUBLE_QUOTES LS(N2) // "
-#define _SINGLE_QUOTES BSLH // '
+#define _DQT LS(N2) // "
+#define _SQT BSLH // '
 #define _LEFT_BRACE RA(N7) // {
 #define _RIGHT_BRACE RA(N0) // }
 #define _AT RA(N2) // @

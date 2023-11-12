@@ -53,7 +53,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        _SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
@@ -81,11 +81,11 @@
         symbol_layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │   å      │   │          │  ]       │  )       │  }       │  ^       │
-            &trans      &trans    &trans     &trans     &kp _AA        &trans     &kp RBKT   &kp RPAR   &kp RBRC   &kp CARET
+        //│          │     æ    │          │          │          │   │          │  ]       │  )       │   ø      │  ^       │
+            &trans      &kp _AE    &trans     &trans     &trans        &trans     &kp RBKT   &kp RPAR   &kp _OE   &kp CARET
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans      &trans    &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
+        //│    å     │          │          │          │          │   │          │          │          │          │          │
+            &kp _AA    &trans    &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
             &trans      &trans    &trans     &trans     &trans         &trans     &trans      &trans     &trans    &trans
