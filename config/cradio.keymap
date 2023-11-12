@@ -13,25 +13,26 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3 &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
-
-// {
-//     macros {
-//         GRVE: GRVE {
-//             label = "GRVE";
-//             compatible = "zmk,behavior-macro";
-//             #binding-cells = <0>;
-//             bindings
-//                 = <&macro_press &kp _GRAVE>
-//                 , <&macro_press &kp SPACE>
-//                 ;
-//         };
-//     };
-//   };
-
 / {
     macros {
     GRVE: GRVE {
         label = "GRVE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp _GRAVE &kp SPACE>
+            ;
+    };
+    HAT: HAT {
+        label = "HAT";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp _HAT &kp SPACE>
+            ;
+    };
+    TILDE: TILDE {
+        label = "TILDE";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
@@ -91,7 +92,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  PAGE_UP │  [       │  (       │  {       │  |       │   │ ~        │  [       │  (       │  {       │   ?      │
-            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &kp _PIPE     &kp _TILDE  &kp _LBKT  &kp _LPAR  &kp _LBRC &kp _QMARK
+            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &kp _PIPE     &TILDE  &kp _LBKT  &kp _LPAR  &kp _LBRC &kp _QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  "       │  -       │  =       │  \       │   /      │
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _DQT    &kp _MINUS &kp _EQUAL &kp _BSLH &kp _SLASH
@@ -107,7 +108,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp _LBKT  &kp _LPAR  &kp _LBRC  &trans          &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC &kp _HAT
+            &trans     &kp _LBKT  &kp _LPAR  &kp _LBRC  &trans          &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC &HAT
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
