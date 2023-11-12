@@ -29,6 +29,17 @@
 //   };
 
 / {
+    macros {
+    GRVE: GRVE {
+        label = "GRVE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp _GRAVE>
+            , <&macro_press &kp SPACE>
+            ;
+    };
+  };
     behaviors {
         htl: hold_tap_leader {
             label = "leader_hold_tap";
