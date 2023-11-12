@@ -85,7 +85,7 @@
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _DQT    &kp _MINUS &kp _EQUAL &kp _BSLH &kp _SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │          │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &GRVE          &kp _AMPS  &kp _UNDER &kp _PLUS  &trans    &trans
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &kp _GRAVE      &kp _AMPS  &kp _UNDER &kp _PLUS  &trans    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
