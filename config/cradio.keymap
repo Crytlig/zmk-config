@@ -23,7 +23,7 @@
             = <&macro_tap &kp _GRAVE &kp SPACE>
             ;
     };
-    
+
     HAT: HAT {
         label = "HAT";
         compatible = "zmk,behavior-macro";
@@ -32,14 +32,14 @@
             = <&macro_tap &kp _HAT &kp SPACE>
             ;
     };
-    // TILDE: TILDE {
-    //     label = "TILDE";
-    //     compatible = "zmk,behavior-macro";
-    //     #binding-cells = <0>;
-    //     bindings
-    //         = <&macro_tap &kp _TILDE &kp SPACE>
-    //         ;
-    // };
+    TILDE: TILDE {
+        label = "TILDE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp _TILDE &kp SPACE>
+            ;
+    };
   };
     behaviors {
         htl: hold_tap_leader {
