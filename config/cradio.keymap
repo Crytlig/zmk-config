@@ -13,20 +13,22 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3 &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
+
+// {
+//     macros {
+//         GRVE: GRVE {
+//             label = "GRVE";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <0>;
+//             bindings
+//                 = <&macro_press &kp _GRAVE>
+//                 , <&macro_press &kp SPACE>
+//                 ;
+//         };
+//     };
+//   };
+
 / {
-    macros {
-        GRVE: GRVE {
-            label = "GRVE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp _GRAVE>
-                , <&macro_press &kp SPACE>
-                ;
-        };
-    };
-  };
-  {
     behaviors {
         htl: hold_tap_leader {
             label = "leader_hold_tap";
