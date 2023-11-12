@@ -23,6 +23,7 @@
             = <&macro_tap &kp _GRAVE &kp SPACE>
             ;
     };
+    
     HAT: HAT {
         label = "HAT";
         compatible = "zmk,behavior-macro";
@@ -31,14 +32,14 @@
             = <&macro_tap &kp _HAT &kp SPACE>
             ;
     };
-    TILDE: TILDE {
-        label = "TILDE";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp _GRAVE &kp SPACE>
-            ;
-    };
+    // TILDE: TILDE {
+    //     label = "TILDE";
+    //     compatible = "zmk,behavior-macro";
+    //     #binding-cells = <0>;
+    //     bindings
+    //         = <&macro_tap &kp _TILDE &kp SPACE>
+    //         ;
+    // };
   };
     behaviors {
         htl: hold_tap_leader {
@@ -92,7 +93,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  PAGE_UP │  [       │  (       │  {       │  |       │   │ ~        │  [       │  (       │  {       │   ?      │
-            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &kp _PIPE     &TILDE  &kp _LBKT  &kp _LPAR  &kp _LBRC &kp _QMARK
+            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &kp _PIPE     &kp _TILDE  &kp _LBKT  &kp _LPAR  &kp _LBRC &kp _QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  "       │  -       │  =       │  \       │   /      │
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _DQT    &kp _MINUS &kp _EQUAL &kp _BSLH &kp _SLASH
