@@ -82,7 +82,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp _LBKT  &kp _LPAR  &LBRC     &trans           &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC &trans
+            &trans     &kp _LBKT  &kp _LPAR  &kp _LBRC &trans           &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
