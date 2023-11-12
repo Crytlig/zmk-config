@@ -7,7 +7,7 @@
 #define _LPAR LS(N8) // (
 #define _RPAR LS(N9) // )
 #define _SLASH AMPS // /
-#define _BSLH RA(NUBS) 
+#define _BSLH RA(NUBS) // \
 #define _PRCNT LS(N5) // %
 #define _DQT LS(N2) // "
 #define _SQT BSLH // '
@@ -30,3 +30,4 @@
 #define _TILDE RA(RBKT) // ~ 
 #define _HAT LS(RBKT) // ^
 #define _GRAVE EQUAL // ´
+#define _BTICK PLUS // `

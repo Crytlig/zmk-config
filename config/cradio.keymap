@@ -10,7 +10,7 @@
 #include "danish.dtsi"
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3 &ht LGUI k4
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1 &ht LALT k2   &ht LCTRL k3 &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
@@ -45,7 +45,7 @@
             label = "BTICK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PLUS &kp PLUS>;
+            bindings = <&kp _BTICK &kp SPACE>;
         };
   };
 
@@ -107,7 +107,7 @@
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _DQT   &kp _MINUS &kp _EQUAL &kp _BSLH &kp _SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │          │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &BTICK          &kp _AMPS  &kp _UNDER &kp _PLUS  &trans    &trans
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &BTICK         &kp _AMPS  &kp _UNDER &kp _PLUS  &trans    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
