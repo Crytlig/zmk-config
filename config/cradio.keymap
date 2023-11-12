@@ -72,7 +72,7 @@
             &kp _EXCL  &kp _AT   &kp _HASH   &kp _DLLR  &kp _PRCNT     &kp _STAR  &kp _MINUS &kp _EQUAL &kp _BSLH   &kp _SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &trans         &kp _AMPS   &kp _UNDER &kp _PLUS &kp _PIPE  &trans
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &bootloader     &kp _AMPS   &kp _UNDER &kp _PLUS &kp _PIPE  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
