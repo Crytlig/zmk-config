@@ -29,3 +29,4 @@
 #define _COLON LS(DOT) // :
 #define _TILDE RA(RBKT) // ~ 
 #define _HAT LS(RBKT) // ^
+#deifne _GRAVE EQUAL // ´
