@@ -11,8 +11,8 @@
 #define _PRCNT LS(N5) // %
 #define _DQT LS(N2) // "
 #define _SQT BSLH // '
-#define _LEFT_BRACE RA(N7) // {
-#define _RIGHT_BRACE RA(N0) // }
+#define _LBRC RA(N7) // {
+#define _RBRC RA(N0) // }
 #define _AT RA(N2) // @
 #define _DLLR RA(N4) // $
 #define _EQUAL RPAR // =
