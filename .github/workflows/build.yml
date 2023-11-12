@@ -17,12 +17,6 @@ jobs:
           echo "BRANCH=$branch" >> $GITHUB_OUTPUT
         id: branch
 
-  # build-urob:
-  #   needs: adjust-branch-name
-  #   uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
-  #   with:
-  #     archive_name: firmware-${{needs.adjust-branch-name.outputs.BRANCH}}-${{github.run_id}}
-    
   build-zmk:
     needs: adjust-branch-name
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
