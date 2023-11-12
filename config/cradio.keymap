@@ -37,6 +37,7 @@
         bindings
             = <&macro_press &kp _GRAVE>
             , <&macro_press &kp SPACE>
+            , <&macro_release &kp SPACE>
             ;
     };
   };
