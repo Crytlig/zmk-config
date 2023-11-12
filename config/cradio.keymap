@@ -66,7 +66,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  PAGE_UP │  [       │  {       │  }       │          │   │ ~        │  [       │  (       │  {       │      ?   │
-            &kp PG_UP  &kp LBKT   &kp _LBRC   &kp RBRC   &trans         &kp TILDE  &kp _LBKT  &kp _LPAR &kp _LBRC  &kp _QMARK
+            &kp PG_UP  &kp _LBKT  &kp _LBRC  &kp _RBRC   &trans         &kp TILDE  &kp _LBKT  &kp _LPAR &kp _LBRC  &kp _QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │   /      │
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _STAR  &kp _MINUS &kp _EQUAL &kp _BSLH  &kp _SLASH
