@@ -68,7 +68,7 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  ' *     │  H       │  J       │  K       │  L       │
             HRML(A,        S,         D,         F)     &kp G          &kp _SQT    HRMR(H,    J,         K,         L)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 3 TAB   &kp SPACE      &kp BSPC  &htl 4 1 
@@ -111,10 +111,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp _RBKT   &kp _RPAR &kp _RBRC  &kp _OE
+            &trans      &trans    &kp _AE    &trans     &trans         &kp _LT    &kp _RBKT   &kp _RPAR &kp _RBRC  &kp _OE
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp _AA     &trans    &trans     &trans     &trans         &trans     &kp _LBKT   &kp _LPAR &kp _LBRC  &trans
+            &kp _AA     &trans    &trans     &trans     &trans         &kp _GT    &kp _LBKT   &kp _LPAR &kp _LBRC  &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
             &trans      &trans    &trans     &trans     &trans         &trans     &trans      &trans    &trans     &trans
