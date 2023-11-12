@@ -32,8 +32,9 @@
             = <&macro_tap &kp _HAT &kp SPACE>
             ;
     };
-    TILDE: TILDE {
-        label = "TILDE";
+
+    TLDE: TLDE {
+        label = "TLDE";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
@@ -41,6 +42,7 @@
             ;
     };
   };
+
     behaviors {
         htl: hold_tap_leader {
             label = "leader_hold_tap";
