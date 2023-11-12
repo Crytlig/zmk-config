@@ -35,9 +35,7 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
-            = <&macro_press &kp _GRAVE>
-            , <&macro_press &kp SPACE>
-            , <&macro_release>
+            = <&macro_tap &kp _GRAVE &kp SPACE>
             ;
     };
   };
