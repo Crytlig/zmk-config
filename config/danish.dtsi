@@ -27,5 +27,3 @@
 #define _OE APOS // ø
 #define _AA LBKT // å
 #define _COLON LS(DOT) // :
-
-
