@@ -1,6 +1,6 @@
 #define _QMARK LS(MINUS) // ?
 #define _MINUS FSLH // -
-#define _UNDERSCORE LS(FSLH) // _
+#define _UNDER LS(FSLH) // _
 #define _HASH LS(N3) // #
 #define _STAR PIPE // *
 #define _PLUS MINUS // +
