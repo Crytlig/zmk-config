@@ -66,13 +66,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  PAGE_UP │  [       │  {       │  }       │          │   │ ~        │  [       │  (       │  {       │      ?   │
-            &kp PG_UP  &kp LBKT   &kp _LBRC   &kp RBRC   &trans         &kp TILDE  &kp _LBKT  &kp _LPAR  &kp _LBRC  &kp _QMARK
+            &kp PG_UP  &kp LBKT   &kp _LBRC   &kp RBRC   &trans         &kp TILDE  &kp _LBKT  &kp _LPAR &kp _LBRC  &kp _QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │   /      │
-            &kp _EXCL  &kp _AT   &kp _HASH   &kp _DLLR  &kp _PRCNT     &kp _STAR  &kp _MINUS &kp _EQUAL &kp _BSLH   &kp _SLASH
+            &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _STAR  &kp _MINUS &kp _EQUAL &kp _BSLH  &kp _SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &bootloader    &kp _AMPS  &kp _UNDER  &kp _PLUS  &kp _PIPE  &trans
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &bootloader    &kp _AMPS  &kp _UNDER  &kp _PLUS &kp _PIPE  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -82,13 +82,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp _LBKT  &kp _LPAR  &LBRC     &trans           &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC  &trans
+            &trans     &kp _LBKT  &kp _LPAR  &LBRC     &trans           &trans    &kp _RBKT   &kp _RPAR  &kp _RBRC &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans      &trans    &trans     &trans     &trans         &trans    &trans      &trans     &trans    &trans
+            &trans     &trans     &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
-            &trans      &trans    &trans     &trans     &trans          &trans    &trans      &trans     &trans     &trans
+            &trans     &trans     &trans     &trans     &trans          &trans    &trans      &trans     &trans    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp DEL    &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -98,10 +98,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans      &trans     &kp _AE     &trans     &trans       &trans     &kp _RBKT  &kp _RPAR  &kp _RBRC   &trans
+            &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp _RBKT   &kp _RPAR &kp _RBRC  &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp _AA      &trans    &trans     &trans     &trans        &trans     &trans      &trans    &kp _OE    &trans
+            &kp _AA     &trans    &trans     &trans     &trans         &trans     &trans      &trans    &kp _OE    &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
             &trans      &trans    &trans     &trans     &trans         &trans     &trans      &trans    &trans     &trans
