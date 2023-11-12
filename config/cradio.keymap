@@ -65,14 +65,14 @@
         symbol_layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  PAGE_UP │  [       │  (       │  {       │          │   │ ~        │  [       │  (       │  {       │      ?   │
-            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &trans        &kp _TILDE  &kp _LBKT  &kp _LPAR &kp _LBRC  &kp _QMARK
+        //│  PAGE_UP │  [       │  (       │  {       │  |       │   │ ~        │  [       │  (       │  {       │      ?   │
+            &kp PG_UP  &kp _LBKT  &kp _LPAR  &kp _LBRC   &kp _PIPE        &kp _TILDE  &kp _LBKT  &kp _LPAR &kp _LBRC  &kp _QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  "       │  -       │  =       │  \       │   /      │
             &kp _EXCL  &kp _AT    &kp _HASH  &kp _DLLR  &kp _PRCNT     &kp _DQT    &kp _MINUS &kp _EQUAL &kp _BSLH  &kp _SLASH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &trans         &kp _AMPS  &kp _UNDER  &kp _PLUS &kp _PIPE  &kp _GRAVE
+        //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │          │          │
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &kp _GRAVE      &kp _AMPS  &kp _UNDER  &kp _PLUS &trans    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
