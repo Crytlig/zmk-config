@@ -90,7 +90,7 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  ' *     │  H       │  J       │  K       │  L       │
         // HRML(A,        S,         D,         F)     &kp G          &kp _SQT    HRMR(H,    J,         K,         L)
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' *     │
-            HRML(A,        S,         D,         F)     &kp G          &kp H       HRMR(J,    K,         L,         &kp _SQT)
+            HRML(A,        S,         D,         F)     &kp G          &kp H       HRMR(J,    K,         L,          _SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
