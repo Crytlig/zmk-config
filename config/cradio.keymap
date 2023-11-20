@@ -21,11 +21,11 @@
         //     #binding-cells = <0>;
         //     bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FLSH>, <&macro_release &kp RALT>;
         // };
-        GRVE: GRVE {
-            label = "GRVE";
+        DEBUG: DEBUG {
+            label = "DEBUG";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp _GRAVE &kp SPACE>;
+            bindings = <&macro_press &kp LSHFT &kp O>;
         };
   };
 
