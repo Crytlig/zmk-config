@@ -113,8 +113,8 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            // &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &WCP_OE 
-            &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &trans 
+            &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &WCP_OE 
+            // &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &trans 
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp _AA     &trans    &trans     &trans     &trans         &trans     &kp LBKT   &kp LPAR   &kp LBRC   &trans
