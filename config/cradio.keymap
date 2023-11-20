@@ -153,8 +153,8 @@
         //│  1       │  2       │  3       │  4       │  5       │   │          │  HOME    │  END     │          │  :       │
              &kp N1    &kp N2     &kp N3     &kp N4     &kp N5         &trans     &kp HOME   &kp END     &trans    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   6      │  7       │  8       │  9       │  0       │   │  LEFT    │  DOWN    │  UP      │  RIGHT              │
-            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0         &kp LARW   &kp DARW   &kp UARW    &kp RARW  &trans
+        // │   6      │  7       │  8       │  9       │  0       │   │  LEFT    │  DOWN    │  UP      │  RIGHT      ;      │
+            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0         &kp LARW   &kp DARW   &kp UARW    &kp RARW  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │          │          │          │          │
            &caps_word  &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
