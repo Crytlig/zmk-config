@@ -14,18 +14,14 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
-//     macros {
-//     WCP_OE: WCP_OE {
-//             label = "WCP_OE";
-//             compatible = "zmk,behavior-macro";
-//             #binding-cells = <0>;
-//             bindings
-//                 = <&macro_press &kp RALT>
-//                 , <&macro_tap &kp O &kp FLSH>
-//                 , <&macro_release &kp RALT>
-//                 ;
-//         };
-//   };
+    macros {
+    WCP_OE: WCP_OE {
+            label = "WCP_OE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FLSH>, <&macro_release &kp RALT>;
+        };
+  };
 
     behaviors {
         htl: hold_tap_leader {
