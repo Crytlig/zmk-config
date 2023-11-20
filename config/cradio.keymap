@@ -15,38 +15,6 @@
 
 / {
     macros {
-    GRVE: GRVE {
-        label = "GRVE";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp _GRAVE &kp SPACE>
-            ;
-    };
-
-    HAT: HAT {
-        label = "HAT";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp _HAT &kp SPACE>
-            ;
-    };
-
-    TLDE: TLDE {
-        label = "TLDE";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp _TILDE &kp SPACE>
-            ;
-    };
-    BTICK: BTICK {
-            label = "BTICK";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp _BTICK &kp SPACE>;
-        };
     WCP_OE: WCP_OE {
             label = "WCP_OE";
             compatible = "zmk,behavior-macro";
@@ -99,8 +67,6 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
-        //│  A       │  S       │  D       │  F       │  G       │   │  ' "     │  H       │  J       │  K       │  L       │
-            // HRML(A,        S,         D,         F)     &kp G          &kp SQT    HRMR(H,    J,         K,          L)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
