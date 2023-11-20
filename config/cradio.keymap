@@ -21,11 +21,17 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FSLH>, <&macro_release &kp RALT>;
         };
-        DEBUG: DEBUG {
-            label = "DEBUG";
+        WCP_AA: WCP_AA {
+            label = "WCP_AA";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHFT &kp O>, <&macro_tap &kp O>;
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp A>, <&macro_release &kp RALT>;
+        };
+        WCP_AE: WCP_AE {
+            label = "WCP_OE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp A &kp E>, <&macro_release &kp RALT>;
         };
   };
 
@@ -113,11 +119,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &WCP_OE 
-            // &trans      &trans    &kp _AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &trans 
+            &trans      &trans    &WCP_AE    &trans     &trans         &trans     &kp RBKT    &kp RPAR   &kp RBRC  &WCP_OE
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp _AA     &trans    &trans     &trans     &trans         &trans     &kp LBKT   &kp LPAR   &kp LBRC   &trans
+            &WCP_AA     &trans    &trans     &trans     &trans         &trans     &kp LBKT   &kp LPAR   &kp LBRC   &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
             &trans      &trans    &trans     &trans     &trans         &trans     &trans      &trans    &trans     &trans
