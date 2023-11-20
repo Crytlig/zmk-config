@@ -15,11 +15,17 @@
 
 / {
     macros {
-    WCP_OE: WCP_OE {
-            label = "WCP_OE";
+        // WCP_OE: WCP_OE {
+        //     label = "WCP_OE";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FLSH>, <&macro_release &kp RALT>;
+        // };
+        GRVE: GRVE {
+            label = "GRVE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FLSH>, <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp _GRAVE &kp SPACE>;
         };
   };
 
