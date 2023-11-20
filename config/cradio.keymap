@@ -15,12 +15,12 @@
 
 / {
     macros {
-        // WCP_OE: WCP_OE {
-        //     label = "WCP_OE";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FSLH>, <&macro_release &kp RALT>;
-        // };
+        WCP_OE: WCP_OE {
+            label = "WCP_OE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O &kp FSLH>, <&macro_release &kp RALT>;
+        };
         DEBUG: DEBUG {
             label = "DEBUG";
             compatible = "zmk,behavior-macro";
