@@ -155,7 +155,7 @@ int zmk_widget_bongo_cat_init(struct zmk_widget_bongo_cat *widget, lv_obj_t *par
 
     sys_slist_append(&widgets, &widget->node);
 
-    // widget_bongo_cat_init();
+    widget_bongo_cat_init();
 
     return 0;
 }
