@@ -1,6 +1,6 @@
 name: Build ZMK
 
-on: [pull_request, workflow_dispatch]
+on: [pull_request, workflow_dispatch, push]
 
 jobs:
   adjust-branch-name:
