@@ -6,7 +6,7 @@ jobs:
   adjust-branch-name:
     runs-on: ubuntu-22.04
     outputs:
-      BRANCH: ${{steps.branch.outputs.BRANCH}}
+      BRANCH: ${{ steps.branch.outputs.BRANCH }}
     steps:
       - run: |
           branch='${{ github.ref_name }}'
