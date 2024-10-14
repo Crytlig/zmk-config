@@ -9,7 +9,7 @@ jobs:
       BRANCH: ${{ steps.branch.outputs.BRANCH }}
     steps:
       - run: |
-          if [ ${{ github.event == 'pull_request' }} ]; then
+          if ${{ github.event == 'pull_request' }}; then
             echo "Using PR head_ref"
             branch=${{ github.head_ref }}
           else
