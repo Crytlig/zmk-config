@@ -9,15 +9,15 @@ jobs:
       BRANCH: ${{ steps.branch.outputs.BRANCH }}
     steps:
       - run: |
-          branch='${{ github.ref_name }}'
           if [ ${{ github.event == 'pull_request' }} ]; then
-            branch='${{github.head_ref}}'
+            echo "Using PR head_ref"
+            branch=${{ github.head_ref }}
+          else
+            echo "Not in PR. Using ref_name"
+            branch=${{ github.ref_name }}
           fi;
 
-          echo "github.ref_name = ${{ github.ref_name }}"
-          echo "github.ref = ${{ github.ref }}"
-
-          echo "branch name = $branch"
+          echo "branch = $branch"
 
           echo "BRANCH=$branch" >> $GITHUB_OUTPUT
         id: branch
