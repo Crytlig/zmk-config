@@ -29,6 +29,12 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp RALT>, <&macro_tap &kp A &kp E>, <&macro_release &kp RALT>;
         };
+        tmux_cb: tmux_cb{
+            label = "tmux_cb";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp B>, <&macro_release &kp LCTRL>;
+        };
   };
 
     behaviors {
@@ -61,6 +67,7 @@
         };
     };
 
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -82,14 +89,14 @@
         symbol_layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  PAGE_UP │  [       │  {       │  }       │          │   │ ~        │  [       │  (       │ {        │    / ?   │
-            &kp PG_UP  &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp TILDE  &kp LBKT  &kp LPAR    &kp LBRC   &kp FSLH      
+        //│  PAGE_UP │          │          │          │          │   │ ~        │  [       │  (       │ {        │    / ?   │
+            &kp PG_UP  &trans     &trans     &trans     &trans         &kp TILDE  &kp LBKT  &kp LPAR    &kp LBRC   &kp FSLH      
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PAGE_DN  │ PRINT_SCR│          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PG_DN  &kp PSCRN  &trans     &trans     &bootloader    &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+            &kp PG_DN  &kp PSCRN  &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp BSPC  &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -148,10 +155,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &kp B     &trans    &bt BT_SEL 0     &trans     &trans     &trans     &trans    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans    &trans    &bt BT_SEL 1     &trans     &trans     &trans     &trans    &bootloader
+           &bootloader &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
