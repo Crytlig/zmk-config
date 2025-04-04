@@ -128,7 +128,7 @@
             &WCP_AA     &trans    &trans     &trans     &trans         &trans     &kp LBKT   &kp LPAR   &kp LBRC   &trans
         //┼──────────┼──────────┼──────────┼──────────┼──────────┤   ┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          |          │          |
-            &trans      &trans    &kp F10    &kp F11    &kp F12        &trans     &trans      &trans    &trans     &trans
+            &bootloader &trans    &kp F10    &kp F11    &kp F12        &trans     &trans      &trans    &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE      &kp DEL    &sl 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
